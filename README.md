@@ -5,8 +5,8 @@ Simple Tutorial for MFT (CPU Version), source codes courtesy Dr. Meng (SCEC)
 a. Continuous waveform 
 Sorted under a directory ContWF/, named as each day: 20190610, for instance. 
 Put all waveforms for used stations together: make sure all of them have roughly
-the same length (the problem would use common window for all traces); all of them
-shift back to the same origin time (no negative values allowed). 
+the same length (the program would use common window for all traces); all of them
+should be shifted back to the same origin time (no negative values allowed). 
 
 About the filter: this generally depends on the purpose. To filter out signals from 
 regional/teleseismic events as well as suppress culture (traffic) noises, a proper 
@@ -24,3 +24,4 @@ Then calculate the SNR for all phase picks (to determine whether this phase wind
 could be used as a matched filter). 
 
 c. Working direcotry 
+It contains two parts: sliding-window cross-correlation, and stacking. 
